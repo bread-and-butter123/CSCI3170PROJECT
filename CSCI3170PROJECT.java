@@ -15,7 +15,7 @@ public class CSCI3170PROJECT {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       System.out.println("helllo world!"); // TODO code application logic here
     }
     
 }

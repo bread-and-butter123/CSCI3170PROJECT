@@ -1,0 +1,39 @@
+package csci3170project;
+
+import java.io.*; 
+
+
+public class LibraryUser {
+    public static void main(String[] args) throws Exception {
+        int choice;
+        String criterion;
+        int userid;
+        
+        BufferedReader consoleInput=new BufferedReader(new InputStreamReader(System.in)); 
+
+
+        System.out.println("-----Operations for library user menu-----");
+        System.out.println("1. Search for Books");
+        System.out.println("2. Show loan record of a user");
+        System.out.println("3. Return to the main menu");
+        System.out.println("Enter Your Choice: ");
+        choice=Integer.parseInt(consoleInput.readLine());
+        if (choice == 1) {
+            System.out.println("Choose the Search criterion:");
+            System.out.println("1. call number");
+            System.out.println("2. title");
+            System.out.println("3. author");
+            System.out.println("Choose the search criterion: ");
+            criterion=consoleInput.readLine();
+            System.out.println("Type in the Search Keyword: ");
+        }
+        else if (choice==2){
+            System.out.println("Enter The User ID: ");
+            userid=Integer.parseInt(consoleInput.readLine());
+            System.out.println("Loan Record:");
+        }
+        else if (choice==3){
+            //return to main menu
+        }
+    }
+}
